@@ -16,4 +16,5 @@ if [ -n "$MSG"  ]; then
 else
 	MSG='No ip found on interfaces'
 	`/usr/local/bin/growlnotify -s -p $PRIORITY -t "$APP" -m "$(echo -e $MSG)"`
+  echo $MSG
 fi
