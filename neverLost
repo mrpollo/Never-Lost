@@ -20,4 +20,3 @@ fi
 =======
 fi
 `/usr/local/bin/growlnotify -s -p $PRIORITY -t "$APP" -m "$(echo -e $MSG)"`
->>>>>>> cba21f969212896d1fe950d00eef742d073e3cfb
