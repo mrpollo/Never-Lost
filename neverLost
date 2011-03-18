@@ -11,10 +11,13 @@ fi
 if [ -n "$WIFIP"  ]; then
 	MSG="$MSG""WIFI: $WIFIP"
 fi
-if [ -n "$MSG"  ]; then
-	`/usr/local/bin/growlnotify -s -p $PRIORITY -t "$APP" -m "$(echo -e $MSG)"`
-else
+if [ -z "$MSG"  ]; then
 	MSG='No ip found on interfaces'
+<<<<<<< HEAD
 	`/usr/local/bin/growlnotify -s -p $PRIORITY -t "$APP" -m "$(echo -e $MSG)"`
   echo $MSG
 fi
+=======
+fi
+`/usr/local/bin/growlnotify -s -p $PRIORITY -t "$APP" -m "$(echo -e $MSG)"`
+>>>>>>> cba21f969212896d1fe950d00eef742d073e3cfb
