@@ -14,4 +14,21 @@ fi
 if [ -z "$MSG"  ]; then
 	MSG='No ip found on interfaces'
 fi
-`/usr/local/bin/growlnotify -s -p $PRIORITY -t "$APP" -m "$(echo -e $MSG)"`
+if [ $1 = "pb" ]
+then
+	if [ -z $2 ]
+	then
+		`echo -e "$MSG" | pbcopy`
+	else
+		echo $2
+		if [ $2 = "eth" ]
+		then
+			`echo "$ETHIP" | pbcopy`
+		elif [ $2 = "wifi" ]
+		then
+			`echo "$WIFIP" | pbcopy`
+		fi
+	fi
+else
+	`/usr/local/bin/growlnotify -s -p $PRIORITY -t "$APP" -m "$(echo -e $MSG)"`
+fi
