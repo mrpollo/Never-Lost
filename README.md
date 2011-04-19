@@ -5,5 +5,16 @@ _OSX_ is required to run initially but support for other OS's will be added in t
 ### Growl (_growlnotify_):
 requires that you previously installed _'growlnotify'_ Growl and _growlnotify_ can be found on their website http://growl.info/
 please see them for help installing or using
-### pbcopy ( by _Apple Computer, Inc. January 12, 2005_ )
+### pbcopy
 pbcopy comes standard on OSX since 10.3
+
+#### Growl Sample
+```bash
+nlost
+```
+#### pbcopy Samples
+```bash
+nlost pb
+nlost pb eth
+nlost pb wifi
+```
