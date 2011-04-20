@@ -1,4 +1,43 @@
 # Never Lost
+if when you do _ifconfig_ you are tired of a response that looks like this
+
+```bash
+lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384
+	inet6 ::1 prefixlen 128 
+	inet6 fe80::1%lo0 prefixlen 64 scopeid 0x1 
+	inet 127.0.0.1 netmask 0xff000000 
+gif0: flags=8010<POINTOPOINT,MULTICAST> mtu 1280
+stf0: flags=0<> mtu 1280
+en0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	ether 34:15:9e:02:5b:24 
+	media: autoselect
+	status: inactive
+fw0: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 4078
+	lladdr 34:15:9e:ff:fe:02:5b:24 
+	media: autoselect <full-duplex>
+	status: inactive
+en1: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	ether f8:1e:df:e5:17:d9 
+	inet6 fe80::fa1e:dfff:fee5:17d9%en1 prefixlen 64 scopeid 0x6 
+	inet 192.168.1.101 netmask 0xffffff00 broadcast 192.168.1.255
+	media: autoselect
+	status: active
+vmnet1: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	ether 00:50:56:c0:00:01 
+	inet 192.168.63.1 netmask 0xffffff00 broadcast 192.168.63.255
+vmnet8: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
+	ether 00:50:56:c0:00:08 
+	inet 192.168.46.1 netmask 0xffffff00 broadcast 192.168.46.255
+
+```
+
+and need something more like this
+
+```bash
+
+```
+![nlost growl sample](http://ramonroche.com/content/nlost_sample_a.png "nlos Growl Sample")
+
 ## REQUIREMENTS
 ### OSX:
 _OSX_ is required to run initially but support for other OS's will be added in the future
