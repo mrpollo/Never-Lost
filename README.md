@@ -1,5 +1,5 @@
 # Never Lost
-if when you do _ifconfig_ you are tired of a response that looks like this
+if you are tired of looking for your ip and doing _ifconfig_ and getting sometimes a big response like this
 
 ```bash
 lo0: flags=8049<UP,LOOPBACK,RUNNING,MULTICAST> mtu 16384
@@ -28,17 +28,16 @@ vmnet1: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 vmnet8: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 	ether 00:50:56:c0:00:08 
 	inet 192.168.46.1 netmask 0xffffff00 broadcast 192.168.46.255
-
 ```
 
-and need something more like this
+and would like less complicated, like this
 
 ```bash
 nlost
 ```
 ![nlost growl sample](http://ramonroche.com/content/nlost_sample_a.png "nlos Growl Sample")
 
-it also has an option to output the buffer to your clipboard using pbcopy _warning as this will replace everything on your current clipboard_
+or would like to output the buffer to your clipboard using pbcopy (_warning as this will replace everything on your current clipboard_)
 
 ```bash
 nlost pb
