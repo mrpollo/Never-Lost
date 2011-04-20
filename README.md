@@ -48,20 +48,17 @@ nlost pb wifi
 ```
 
 ## INSTALLATION
-First make sure you have somethign on your path
+First make sure you have something on your path
 
 ```bash
-echo $PATH
--> /opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+echo $PATH -> /opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 ```
-
 it should output something similar to the above, now the next part depends on your preferences, my favorite place to store my scripts is on /usr/local/bin (if you don't know or don't have a preference then just use the script below)
 
 ```bash
 git clone git://github.com/mrpollo/Never-Lost.git Never-Lost | sudo ln -sv Never-Lost/nlost /usr/local/bin/nlost
 ```
-
-_if you need further assistance just email me mrpollo@gmail.com_
+_if you need further assistance just email me_ mrpollo@gmail.com
 
 ## REQUIREMENTS
 ### OSX:
