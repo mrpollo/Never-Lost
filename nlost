@@ -14,19 +14,29 @@ fi
 if [ -z "$MSG"  ]; then
 	MSG='No ip found on interfaces'
 fi
+
 if [ $1 = "pb" ]
 then
 	if [ -z $2 ]
 	then
 		`echo -e "$MSG" | pbcopy`
 	else
-		echo $2
 		if [ $2 = "eth" ]
 		then
-			`echo "$ETHIP" | pbcopy`
+			if [ -n "$ETHIP"  ]
+			then
+				`echo "$ETHIP" | pbcopy`
+			else
+				echo "ETH Not available"
+			fi
 		elif [ $2 = "wifi" ]
 		then
-			`echo "$WIFIP" | pbcopy`
+			if [ -n "$WIFIP"  ]
+			then
+				`echo "$WIFIP" | pbcopy`
+			else
+				echo "WIFI Not available"
+			fi
 		fi
 	fi
 else
