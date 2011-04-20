@@ -34,9 +34,21 @@ vmnet8: flags=8863<UP,BROADCAST,SMART,RUNNING,SIMPLEX,MULTICAST> mtu 1500
 and need something more like this
 
 ```bash
-
+nlost
 ```
 ![nlost growl sample](http://ramonroche.com/content/nlost_sample_a.png "nlos Growl Sample")
+
+it also has an option to output the buffer to your clipboard using pbcopy _warning as this will replace everything on your current clipboard_
+
+```bash
+nlost pb
+-> WIFI: 192.168.1.101
+nlost pb wifi
+-> 192.168.1.101
+```
+
+
+
 
 ## REQUIREMENTS
 ### OSX:
