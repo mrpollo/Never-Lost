@@ -46,6 +46,17 @@ nlost pb
 nlost pb wifi
 -> 192.168.1.101
 ```
+## USAGE
+#### Growl Sample
+```bash
+nlost
+```
+#### pbcopy Samples
+```bash
+nlost pb
+nlost pb eth
+nlost pb wifi
+```
 
 ## INSTALLATION
 First make sure you have something on your path
@@ -68,14 +79,3 @@ requires that you previously installed _'growlnotify'_ Growl and _growlnotify_ c
 please see them for help installing or using
 ### pbcopy
 pbcopy comes standard on OSX since 10.3
-
-#### Growl Sample
-```bash
-nlost
-```
-#### pbcopy Samples
-```bash
-nlost pb
-nlost pb eth
-nlost pb wifi
-```
