@@ -35,7 +35,7 @@ and would like less complicated, like this
 ```bash
 nlost
 ```
-![nlost growl sample](http://ramonroche.com/content/nlost_sample_a.png "nlos Growl Sample")
+![nlost growl sample](http://cl.ly/image/0J0M2q1W0h0F/Screen%20Shot%202013-02-19%20at%2013.11.07.png "nlos Growl Sample")
 
 or would like to output the buffer to your clipboard using pbcopy (_warning as this will replace everything on your current clipboard_)
 
@@ -74,7 +74,7 @@ _if you need further assistance just email me_ mrpollo@gmail.com
 ### OSX:
 _OSX_ is required to run initially but support for other OS's will be added in the future
 ### Growl (_growlnotify_):
-requires that you previously installed _'growlnotify'_ Growl and _growlnotify_ can be found on their website http://growl.info/
+requires that you previously installed _'growlnotify'_ Growl and _growlnotify_ can be found on their website [http://growl.info/](http://growl.info/downloads#generaldownloads)
 please see them for help installing or using
 ### pbcopy
 pbcopy comes standard on OSX since 10.3
